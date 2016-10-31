@@ -1,6 +1,8 @@
 SystemTray
 ==========
 
+Based on [dorkbox.SystemTray](https://github.com/dorkbox/SystemTray)
+
 Cross-platform **SystemTray** and **AppIndicator** support for java applications.
 
 This libraries only purpose is to show *reasonably* decent system-tray icons and app-indicators with a simple popup-menu.
