@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>dorkbox.SystemTray</groupId>
+	<artifactId>dorkbox.SystemTray.parent</artifactId>
+	<version>2.20.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.eclipseorbit</groupId>
+		<artifactId>org.eclipseorbit.parent</artifactId>
+		<relativePath>../orbit-parent/org.eclipseorbit.parent/pom.xml</relativePath>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<name>SystemTray</name>
+
+	<scm>
+		<url>https://github.com/eclipse-orbit/SystemTray.git</url>
+		<connection>scm:git:https://github.com/eclipse-orbit/SystemTray.git</connection>
+	</scm>
+
+	<modules>
+	  <module>releng/dorkbox.SystemTray.releng/pom.xml</module>
+		<module>bundles/SystemTray</module>
+		<module>bundles/SystemTray-Utils</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<id>repo-env-all</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>target-platform-configuration</artifactId>
+						<configuration>
+							<environments>
+								<environment>
+									<os>win32</os>
+									<ws>win32</ws>
+									<arch>x86_64</arch>
+								</environment>
+								<environment>
+									<os>linux</os>
+									<ws>gtk</ws>
+									<arch>x86_64</arch>
+								</environment>
+								<environment>
+									<os>macosx</os>
+									<ws>cocoa</ws>
+									<arch>x86_64</arch>
+								</environment>
+							</environments>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>dorkbox.SystemTray</groupId>
+							<artifactId>dorkbox.SystemTray.releng</artifactId>
+							<version>2.20.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+					<resolver>p2</resolver>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -6,8 +6,7 @@ Bundle-Version: 2.2.0.qualifier
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.slf4j.api;bundle-version="1.7.2"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Import-Package: com.sun.javafx.tk;version="2.2.0",
- com.sun.jna,
+Import-Package: com.sun.jna,
  dorkbox.util,
  dorkbox.util.process,
  org.eclipse.swt,

@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: SystemTray-Utils
 Bundle-SymbolicName: SystemTray-Utils;singleton:=true
-Bundle-Version: 2.9.0.qualifier
+Bundle-Version: 2.20.0.qualifier
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.slf4j.api;bundle-version="1.7.2"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
