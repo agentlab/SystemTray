@@ -10,17 +10,15 @@
 	<packaging>pom</packaging>
 
 	<parent>
-		<groupId>org.eclipseorbit</groupId>
-		<artifactId>org.eclipseorbit.parent</artifactId>
-		<relativePath>../orbit-parent/org.eclipseorbit.parent/pom.xml</relativePath>
+		<groupId>ru.agentlab</groupId>
+		<artifactId>ru.agentlab.parent</artifactId>
+		<relativePath>../agentlab/ru.agentlab.parent/pom.xml</relativePath>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<name>SystemTray</name>
-
 	<scm>
-		<url>https://github.com/eclipse-orbit/SystemTray.git</url>
-		<connection>scm:git:https://github.com/eclipse-orbit/SystemTray.git</connection>
+		<url>https://github.com/agentlab/SystemTray.git</url>
+		<connection>scm:git:https://github.com/agentlab/SystemTray.git</connection>
 	</scm>
 
 	<modules>
