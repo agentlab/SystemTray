@@ -89,7 +89,7 @@
       <repositoryList
           name="Neon">
         <repository
-            url="http://er172-vm-1.tc.test:8090/p2/repacked/"/>
+            url="http://agentlab.ru/pd/p2/repacked/"/>
         <repository
             url="http://download.eclipse.org/eclipse/updates/4.6"/>
       </repositoryList>
