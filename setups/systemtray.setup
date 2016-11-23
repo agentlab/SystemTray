@@ -77,9 +77,6 @@
       <requirement
           name="org.bouncycastle.bcprov"/>
       <requirement
-          name="org.slf4j.api"
-          versionRange="1.7.2"/>
-      <requirement
           name="org.eclipse.swt"/>
       <requirement
           name="*"/>
@@ -90,8 +87,6 @@
           name="Neon">
         <repository
             url="http://agentlab.ru/pd/p2/repacked/"/>
-        <repository
-            url="http://download.eclipse.org/eclipse/updates/4.6"/>
       </repositoryList>
     </targlet>
   </setupTask>
