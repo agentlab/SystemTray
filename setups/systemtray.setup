@@ -140,7 +140,7 @@
   </setupTask>
   <stream name="master"/>
   <logicalProjectContainer
-      xsi:type="setup:ProjectCatalog"
-      href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']"/>
+      xsi:type="setup:Project"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='ru.agentlab']/@projects[name='osgi']"/>
   <description>IDE Setup for SystemTray Project</description>
 </setup:Project>
