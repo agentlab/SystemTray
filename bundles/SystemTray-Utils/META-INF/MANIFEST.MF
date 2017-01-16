@@ -4,10 +4,10 @@ Bundle-Name: SystemTray-Utils
 Bundle-SymbolicName: SystemTray-Utils;singleton:=true
 Bundle-Version: 2.20.0.qualifier
 Bundle-ActivationPolicy: lazy
-Require-Bundle: org.slf4j.api;bundle-version="1.7.2"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: com.sun.jna,
- org.bouncycastle.crypto.digests
+ org.bouncycastle.crypto.digests,
+ org.slf4j;version="1.7.2"
 Export-Package: dorkbox.util,
  dorkbox.util.jna.linux,
  dorkbox.util.process

@@ -67,17 +67,15 @@
         </detail>
       </annotation>
       <requirement
+          name="bcpkix"/>
+      <requirement
+          name="bcprov"/>
+      <requirement
           name="com.sun.jna"/>
       <requirement
           name="com.sun.jna.platform"/>
       <requirement
-          name="com.sun.syndication"/>
-      <requirement
-          name="org.bouncycastle.bcpkix"/>
-      <requirement
-          name="org.bouncycastle.bcprov"/>
-      <requirement
-          name="org.eclipse.swt"/>
+          name="org.eclipse.rcp.feature.group"/>
       <requirement
           name="*"/>
       <sourceLocator
@@ -87,6 +85,10 @@
           name="Neon">
         <repository
             url="http://agentlab.ru/pd/p2/repacked/"/>
+        <repository
+            url="http://agentlab.ru/pd/p2/che/"/>
+        <repository
+            url="http://agentlab.ru/pd/p2/ambry/"/>
       </repositoryList>
     </targlet>
   </setupTask>
@@ -95,7 +97,8 @@
     <workingSet
         name="SystemTray">
       <predicate
-          xsi:type="predicates:LocationPredicate"/>
+          xsi:type="predicates:NamePredicate"
+          pattern="SystemTray.*"/>
     </workingSet>
   </setupTask>
   <setupTask
